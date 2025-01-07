@@ -1,30 +1,12 @@
 import requests
 
-# URL of the raw Python scripts for Tool 1 and Tool 2
-url_tool_1 = 'https://raw.githubusercontent.com/bilalbinkhan1122/UploadPOSTSFromPC/refs/heads/main/UploadPostsFromPC.txt'
-url_tool_2 = 'https://raw.githubusercontent.com/someuser/SomeOtherScript/main/OtherScript.txt'
+url = 'https://raw.githubusercontent.com/bilalbinkhan1122/UploadPOSTSFromPC/refs/heads/main/UploadPostsFromPC.txt'
 
-# Function to download and execute the script
-def execute_script(url):
-    response = requests.get(url)
-    if response.status_code == 200:
-        script_content = response.text
-        exec(script_content)
-    else:
-        print(f"Failed to download the script. HTTP Status Code: {response.status_code}")
-
-# Prompt user to select a tool
-print("Please select a tool to execute:")
-print("1. Tool 1 (Upload Posts from PC)")
-print("2. Tool 2 (Other Script)")
-
-user_choice = input("Enter 1 or 2: ")
-
-if user_choice == '1':
-    print("You selected Tool 1: Upload Posts from PC")
-    execute_script(url_tool_1)
-elif user_choice == '2':
-    print("You selected Tool 2: Other Script")
-    execute_script(url_tool_2)
+# Download the script content
+response = requests.get(url)
+if response.status_code == 200:
+    # Step 2: Execute the content directly using exec()
+    script_content = response.text
+    exec(script_content)
 else:
-    print("Invalid selection. Please choose 1 or 2.")
+    print(f"Failed to download the script. HTTP Status Code: {response.status_code}")
