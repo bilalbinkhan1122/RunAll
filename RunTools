@@ -24,8 +24,7 @@ def choose_and_execute_tool():
     # List of available tools (with names and URLs)
     tools = {
         1: {'name': 'UploadPOSTSFromPC', 'url': 'https://raw.githubusercontent.com/bilalbinkhan1122/UploadPOSTSFromPC/refs/heads/main/UploadPostsFromPC.txt'},
-        2: {'name': 'Folder Organizer', 'url': 'https://raw.githubusercontent.com/bilalbinkhan1122/RunAll/refs/heads/main/runtool2'},  # Example
-        3: {'name': 'Data Processor', 'url': 'https://raw.githubusercontent.com/bilalbinkhan1122/RunAll/refs/heads/main/runtool3'},  # Example
+        2: {'name': 'SchedulePostsToPage', 'url': 'https://raw.githubusercontent.com/bilalbinkhan1122/UploadPOSTSFromPC/refs/heads/main/Schedule_Posts_To_Page.txt'},
     }
 
     # Show the options to the user
