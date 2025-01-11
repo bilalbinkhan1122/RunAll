@@ -44,4 +44,5 @@ def choose_and_execute_tool():
         print("Invalid input, please enter a number.")
 
 # Call the function to choose and execute a tool
-choose_and_execute_tool()
+while True:
+ choose_and_execute_tool()
