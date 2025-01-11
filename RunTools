@@ -23,8 +23,9 @@ def execute_tool(tool_url):
 def choose_and_execute_tool():
     # List of available tools (with names and URLs)
     tools = {
-        1: {'name': 'UploadPOSTSFromPC', 'url': 'https://raw.githubusercontent.com/bilalbinkhan1122/UploadPOSTSFromPC/refs/heads/main/UploadPostsFromPC.txt'},
-        2: {'name': 'SchedulePostsToPage', 'url': 'https://raw.githubusercontent.com/bilalbinkhan1122/UploadPOSTSFromPC/refs/heads/main/Schedule_Posts_To_Page.txt'},
+        1: {'name': 'Upload POSTS From PC', 'url': 'https://raw.githubusercontent.com/bilalbinkhan1122/UploadPOSTSFromPC/refs/heads/main/UploadPostsFromPC.txt'},
+        2: {'name': 'Schedule Posts To Page', 'url': 'https://raw.githubusercontent.com/bilalbinkhan1122/UploadPOSTSFromPC/refs/heads/main/Schedule_Posts_To_Page.txt'},
+        3: {'name': 'Excel Editor', 'url': 'https://raw.githubusercontent.com/bilalbinkhan1122/UploadPOSTSFromPC/refs/heads/main/ExcelEditor.txt'},
     }
 
     # Show the options to the user
